@@ -21,11 +21,11 @@ app.get('/', function (req, res) {
 
 // API Requests
 app.get('/api/whoami', function (req, res) {
-  var ipAddress = req.ip;
+  var ipaddress = req.ip;
   var language = req.headers['accept-language'];
   var software = req.headers['user-agent'];
   res.json({
-    ipAddress: ipAddress,
+    ipaddress: ipaddress,
     language: language,
     software: software
   });
